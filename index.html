@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			http-equiv="Content-Security-Policy"
+			content="upgrade-insecure-requests"
+		/>
+		<title>Przelicznik walut</title>
+		<link rel="shortcut icon" href="image/finance-investment-money-tree.png" type="image/x-icon" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<main class="main">
+			<div class="main-app">
+			<div class="main-name">
+				<div class="logo"> 
+					<img src="image/finance-investment-money-tree.png" />
+				</div>
+				<div class="main-text">
+				<h1>Przelicznik walut</h1>
+				</div>
+			</div>
+			
+			<div class="main-container">
+				<form>
+					<input
+						type="number"
+						placeholder="Kwota"
+						class="amount-input"
+						id="amount-input"
+						required
+					/>
+					<select id="select-dom">
+						<option disabled="" selected="">Wybierz walutę</option>
+					</select>
+					<input
+						type="submit"
+						value="Przelicz"
+						class="submit-btn"
+						id="submit-btn"
+					/>
+				</form>
+			</div>
+			<span class="sum">PLN</span>
+		</div>
+	</main>
+		<script src="script.js"></script>
+	</body>
+</html>
